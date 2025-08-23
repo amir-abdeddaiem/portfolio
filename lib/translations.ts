@@ -1,0 +1,115 @@
+import type { Translations } from "./types"
+
+export const translations: Record<"en" | "fr" | "ar", Translations> = {
+  en: {
+    nav: {
+      home: "Home",
+      about: "About",
+      projects: "Projects",
+      contact: "Contact",
+    },
+    hero: {
+      greeting: "Hello, I'm",
+      name: "Amir Abdeddaiem",
+      title: "Full-Stack Developer",
+      subtitle: "Passionate about web technologies and innovative solutions",
+      cta: "View My Work",
+    },
+    about: {
+      title: "About Me",
+      bio: "Recent graduate from ISET Sfax with a degree in Information Systems Development. Passionate about web technologies and motivated to learn and contribute to innovative projects.",
+      skills: "Skills",
+      extracurriculars: "Leadership",
+      education: "Education",
+    },
+    projects: {
+      title: "My Projects",
+      viewDetails: "View Details",
+      technologies: "Technologies",
+      close: "Close",
+    },
+    contact: {
+      title: "Get In Touch",
+      name: "Name",
+      email: "Email",
+      message: "Message",
+      send: "Send Message",
+      success: "Message sent successfully!",
+      error: "Failed to send message. Please try again.",
+    },
+  },
+  fr: {
+    nav: {
+      home: "Accueil",
+      about: "À Propos",
+      projects: "Projets",
+      contact: "Contact",
+    },
+    hero: {
+      greeting: "Bonjour, je suis",
+      name: "Amir Abdeddaiem",
+      title: "Développeur Full-Stack",
+      subtitle: "Passionné par les technologies web et les solutions innovantes",
+      cta: "Voir Mon Travail",
+    },
+    about: {
+      title: "À Propos de Moi",
+      bio: "Récent diplômé de l'ISET Sfax avec un diplôme en Développement de Systèmes d'Information. Passionné par les technologies web et motivé à apprendre et contribuer à des projets innovants.",
+      skills: "Compétences",
+      extracurriculars: "Leadership",
+      education: "Formation",
+    },
+    projects: {
+      title: "Mes Projets",
+      viewDetails: "Voir Détails",
+      technologies: "Technologies",
+      close: "Fermer",
+    },
+    contact: {
+      title: "Contactez-Moi",
+      name: "Nom",
+      email: "Email",
+      message: "Message",
+      send: "Envoyer",
+      success: "Message envoyé avec succès!",
+      error: "Échec de l'envoi. Veuillez réessayer.",
+    },
+  },
+  ar: {
+    nav: {
+      home: "الرئيسية",
+      about: "نبذة عني",
+      projects: "المشاريع",
+      contact: "اتصل بي",
+    },
+    hero: {
+      greeting: "مرحباً، أنا",
+      name: "أمير عبد الدايم",
+      title: "مطور ويب متكامل",
+      subtitle: "شغوف بتقنيات الويب والحلول المبتكرة",
+      cta: "اطلع على أعمالي",
+    },
+    about: {
+      title: "نبذة عني",
+      bio: "خريج حديث من المعهد العالي للدراسات التكنولوجية بصفاقس بدرجة في تطوير أنظمة المعلومات. شغوف بتقنيات الويب ومتحمس للتعلم والمساهمة في المشاريع المبتكرة.",
+      skills: "المهارات",
+      extracurriculars: "القيادة",
+      education: "التعليم",
+    },
+    projects: {
+      title: "مشاريعي",
+      viewDetails: "عرض التفاصيل",
+      technologies: "التقنيات",
+      close: "إغلاق",
+    },
+    contact: {
+      title: "تواصل معي",
+      name: "الاسم",
+      email: "البريد الإلكتروني",
+      message: "الرسالة",
+      send: "إرسال الرسالة",
+      success: "تم إرسال الرسالة بنجاح!",
+      error: "فشل في إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+    },
+  },
+}
