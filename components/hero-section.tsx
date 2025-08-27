@@ -76,7 +76,7 @@ export function HeroSection() {
         <div className="max-w-6xl mx-auto">
           <div className={`grid lg:grid-cols-2 gap-12 items-center ${isRTL ? "lg:grid-cols-2" : ""}`}>
             {/* Text Content */}
-            <div className={`text-center lg:text-${isRTL ? "right" : "left"} ${isRTL ? "lg:order-2" : ""}`}>
+            <header className={`text-center lg:text-${isRTL ? "right" : "left"} ${isRTL ? "lg:order-2" : ""}`}>
               <p className="text-lg text-muted-foreground mb-4 animate-slide-in-up delay-300">{t.hero.greeting}</p>
 
               <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slide-in-up delay-500 bg-gradient-to-r from-primary via-purple-500 to-primary bg-clip-text text-transparent animate-gradient">
@@ -98,11 +98,12 @@ export function HeroSection() {
                 onClick={scrollToProjects}
                 size="lg"
                 className="animate-slide-in-up delay-900 hover:scale-110 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 group relative overflow-hidden"
+                aria-label="View my projects"
               >
                 <span className="relative z-10">{t.hero.cta}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
-            </div>
+            </header>
 
             {/* Enhanced Photo Section */}
             <div className={`flex justify-center ${isRTL ? "lg:order-1" : ""}`}>
@@ -110,11 +111,12 @@ export function HeroSection() {
                 <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl animate-slide-in-right delay-300 group-hover:scale-105 transition-all duration-500 relative">
                   <Image
                     src="/placeholder.svg?height=320&width=320"
-                    alt="Amir Abdeddaiem"
+                    alt="Amir Abdeddaiem - Full-Stack Developer"
                     width={320}
                     height={320}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     priority
+                    sizes="(max-width: 768px) 280px, 320px"
                   />
                   {/* Overlay gradient on hover */}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -131,12 +133,16 @@ export function HeroSection() {
                 {/* Floating icons around photo */}
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 animate-float delay-1000">
                   <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
-                    <span className="text-xs">💻</span>
+                    <span className="text-xs" role="img" aria-label="Computer">
+                      💻
+                    </span>
                   </div>
                 </div>
                 <div className="absolute top-1/2 -right-8 transform -translate-y-1/2 animate-float delay-2000">
                   <div className="w-6 h-6 bg-purple-500/20 rounded-full flex items-center justify-center">
-                    <span className="text-xs">🚀</span>
+                    <span className="text-xs" role="img" aria-label="Rocket">
+                      🚀
+                    </span>
                   </div>
                 </div>
               </div>
@@ -145,7 +151,7 @@ export function HeroSection() {
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle">
-          <ChevronDown className="h-6 w-6 text-muted-foreground animate-pulse" />
+          <ChevronDown className="h-6 w-6 text-muted-foreground animate-pulse" aria-hidden="true" />
         </div>
       </div>
     </section>
