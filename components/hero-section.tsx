@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ChevronDown, Sparkles } from "lucide-react"
+import { ChevronDown, Download, Mail, Sparkles } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import Image from "next/image"
@@ -38,7 +38,9 @@ export function HeroSection() {
     setDisplayedText("")
     setCurrentIndex(0)
   }, [fullText])
-
+  const scrollToContact = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+  }
   const scrollToProjects = () => {
     const element = document.getElementById("projects")
     if (element) {
@@ -92,17 +94,36 @@ export function HeroSection() {
                 </span>
               </div>
 
-              <p className="text-lg text-muted-foreground mb-8 animate-slide-in-up delay-700">{t.hero.subtitle}</p>
+              <p className="text-lg text-muted-foreground mb-8 animate-slide-in-up delay-700">
+                {t.hero.subtitle}
+              </p>
 
-              <Button
-                onClick={scrollToProjects}
-                size="lg"
-                className="animate-slide-in-up delay-900 hover:scale-110 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 group relative overflow-hidden"
-                aria-label="View my projects"
-              >
-                <span className="relative z-10">{t.hero.cta}</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </Button>
+              <div className="flex flex-row items-center gap-4 animate-slide-in-up">
+                <Button
+                  size="lg"
+                  onClick={scrollToContact}
+                  className="group hover:scale-105 transition-all duration-300 hover:shadow-lg"
+                >
+                  <Mail className={`h-4 w-4 group-hover:scale-110 transition-transform ${isRTL ? "ml-2" : "mr-2"}`} />
+                  {t.hero.getInTouch}
+                </Button>
+
+                <a href="/CV_Amir-Abdeddaiem.pdf" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="hover:scale-110 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 group relative overflow-hidden"
+                    aria-label="View my projects"
+                  >
+                    <Download className={`h-4 w-4 group-hover:scale-110 transition-transform ${isRTL ? "ml-2" : "mr-2"}`} />
+                    <span className="relative z-10">{t.hero.cta}</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </Button>
+                </a>
+              </div>
+
+
+
+
             </header>
 
             {/* Enhanced Photo Section */}
@@ -110,7 +131,7 @@ export function HeroSection() {
               <div className="relative group">
                 <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl animate-slide-in-right delay-300 group-hover:scale-105 transition-all duration-500 relative">
                   <Image
-                    src="/placeholder.svg?height=320&width=320"
+                    src="/placeholder.jpeg?height=320&width=320"
                     alt="Amir Abdeddaiem - Full-Stack Developer"
                     width={320}
                     height={320}
@@ -154,6 +175,6 @@ export function HeroSection() {
           <ChevronDown className="h-6 w-6 text-muted-foreground animate-pulse" aria-hidden="true" />
         </div>
       </div>
-    </section>
+    </section >
   )
 }

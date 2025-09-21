@@ -13,7 +13,8 @@ export const translations: Record<"en" | "fr" | "ar", Translations> = {
       name: "Amir Abdeddaiem",
       title: "Full-Stack Developer",
       subtitle: "Passionate about web technologies and innovative solutions",
-      cta: "View My Work",
+      cta: "Download CV",
+      getInTouch: "Get In Touch",
     },
     about: {
       title: "About Me",
@@ -50,7 +51,8 @@ export const translations: Record<"en" | "fr" | "ar", Translations> = {
       name: "Amir Abdeddaiem",
       title: "Développeur Full-Stack",
       subtitle: "Passionné par les technologies web et les solutions innovantes",
-      cta: "Voir Mon Travail",
+      cta: "Télécharger CV",
+      getInTouch: "Me Contacter",
     },
     about: {
       title: "À Propos de Moi",
@@ -87,7 +89,8 @@ export const translations: Record<"en" | "fr" | "ar", Translations> = {
       name: "أمير عبد الدايم",
       title: "مطور ويب متكامل",
       subtitle: "شغوف بتقنيات الويب والحلول المبتكرة",
-      cta: "اطلع على أعمالي",
+      cta: "تحميل السيرة الذاتية",
+      getInTouch:"تواصل معي",
     },
     about: {
       title: "نبذة عني",

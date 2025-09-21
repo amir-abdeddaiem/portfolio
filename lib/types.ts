@@ -23,6 +23,7 @@ export interface Translations {
     title: string
     subtitle: string
     cta: string
+    getInTouch: string
   }
   about: {
     title: string

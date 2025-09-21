@@ -4,7 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { SkillsProgress } from "@/components/skills-progress"
 import { ProjectsSection } from "@/components/projects-section"
 import { AchievementsSection } from "@/components/achievements-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
+
 import { ContactSection } from "@/components/contact-section"
 import { AnimatedBackground } from "@/components/animated-background"
 import { LoadingScreen } from "@/components/loading-screen"
@@ -24,7 +24,7 @@ export default function Home() {
       <SkillsProgress />
       <ProjectsSection />
       <AchievementsSection />
-      <TestimonialsSection />
+
       <ContactSection />
     </main>
   )
