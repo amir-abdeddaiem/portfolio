@@ -36,9 +36,8 @@ export function ProjectsSection() {
           {projectsData.map((project, index) => (
             <Card
               key={project.id}
-              className={`group hover:shadow-2xl transition-all duration-500 cursor-pointer hover:scale-105 hover:-translate-y-2 relative overflow-hidden ${
-                isInView ? `animate-slide-in-up delay-${300 + index * 150}` : "opacity-0"
-              }`}
+              className={`group hover:shadow-2xl transition-all duration-500 cursor-pointer hover:scale-105 hover:-translate-y-2 relative overflow-hidden ${isInView ? `animate-slide-in-up delay-${300 + index * 150}` : "opacity-0"
+                }`}
               onClick={() => setSelectedProject(project)}
             >
               {/* Gradient overlay */}
@@ -48,7 +47,7 @@ export function ProjectsSection() {
                 <div className="relative overflow-hidden rounded-t-lg">
                   <Image
                     src={project.image || "/placeholder.svg"}
-                    alt={project.title[language]}
+                    alt={project.title[language as keyof typeof project.title] ?? ""}
                     width={400}
                     height={300}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
@@ -71,9 +70,11 @@ export function ProjectsSection() {
               </CardHeader>
               <CardContent className="p-6 relative z-20">
                 <CardTitle className="mb-3 line-clamp-2 group-hover:text-primary transition-colors">
-                  {project.title[language]}
+                  {project.title[language as keyof typeof project.title] ?? project.title["en"]}
                 </CardTitle>
-                <p className="text-muted-foreground mb-4 line-clamp-3">{project.description[language]}</p>
+                <p className="text-muted-foreground mb-4 line-clamp-3">
+                  {project.description[language as keyof typeof project.description] ?? project.description["en"]}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
                     <Badge
@@ -101,20 +102,24 @@ export function ProjectsSection() {
             {selectedProject && (
               <>
                 <DialogHeader>
-                  <DialogTitle className="text-2xl animate-slide-in-up">{selectedProject.title[language]}</DialogTitle>
+                  <DialogTitle className="text-2xl animate-slide-in-up">
+                    {selectedProject.title[language as keyof typeof selectedProject.title] ??
+                      selectedProject.title["en"]}
+                  </DialogTitle>
                 </DialogHeader>
                 <div className="space-y-6">
                   <div className="animate-slide-in-up delay-200">
                     <Image
                       src={selectedProject.image || "/placeholder.svg"}
-                      alt={selectedProject.title[language]}
+                      alt={selectedProject.title[language as keyof typeof selectedProject.title] ?? selectedProject.title["en"]}
                       width={600}
                       height={400}
                       className="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <p className="text-muted-foreground leading-relaxed animate-slide-in-up delay-300">
-                    {selectedProject.fullDescription[language]}
+                    {selectedProject.fullDescription[language as keyof typeof selectedProject.fullDescription] ??
+                      selectedProject.fullDescription["en"]}
                   </p>
                   <div className="animate-slide-in-up delay-400">
                     <h4 className="font-semibold mb-3">{t.projects.technologies}:</h4>

@@ -19,15 +19,15 @@ export const projectsData: Project[] = [
       ar: "تم تطويره باستخدام Next.js و MongoDB، يتضمن رسوم متحركة مخصصة للتحميل، جدولة الأحداث، نظام الحجز، ولوحة تحكم إدارية شاملة لإدارة الأحداث والحجوزات. تتضمن المنصة إشعارات فورية وتكامل الدفع وتحليلات مفصلة لمنظمي الأحداث.",
     },
     technologies: ["Next.js", "MongoDB", "Node.js", "Tailwind CSS", "TypeScript"],
-    image: "/placeholder.svg?height=400&width=600&text=Crépuscule+Prod+Platform",
+    image: "/redroy.png?height=400&width=600&text=Crépuscule+Prod+Platform",
     category: "web",
   },
   {
     id: "pet-owners-platform",
     title: {
-      en: "Pet Owners Platform",
+      en: "Animal's Club",
       fr: "Plateforme pour Propriétaires d'Animaux",
-      ar: "منصة أصحاب الحيوانات الأليفة",
+      ar: "نادي الحيوانات",
     },
     description: {
       en: "Full-stack platform with role-based access and pet services",
@@ -40,28 +40,29 @@ export const projectsData: Project[] = [
       ar: "منصة شاملة تم تطويرها باستخدام Next.js و MongoDB، تتضمن التحكم في الوصول القائم على الأدوار، نظام حجز الخدمات، وظيفة مطابقة الحيوانات الأليفة، ونظام الإبلاغ عن الحيوانات المفقودة. تربط المنصة أصحاب الحيوانات الأليفة بالأطباء البيطريين ومربي الحيوانات الأليفة والخدمات الأخرى المتعلقة بالحيوانات الأليفة في منطقتهم.",
     },
     technologies: ["Next.js", "MongoDB", "Node.js", "Authentication", "Socket.io"],
-    image: "/placeholder.svg?height=400&width=600&text=Pet+Owners+Platform",
+    image: "/sio.png?height=400&width=600&text=Pet+Owners+Platform",
     category: "web",
   },
   {
     id: "ecommerce-php",
-    title: {
-      en: "E-commerce Site (PHP)",
+    title:{
+      en: "Etrade",
       fr: "Site E-commerce (PHP)",
       ar: "موقع التجارة الإلكترونية (PHP)",
     },
     description: {
-      en: "Product and order management system built with PHP",
-      fr: "Système de gestion de produits et commandes développé en PHP",
-      ar: "نظام إدارة المنتجات والطلبات مطور بـ PHP",
+      en: "E-commerce Site (PHP)",
+      fr: "Site E-commerce (PHP)",
+      ar: "موقع التجارة الإلكترونية (PHP)",
     },
+    
     fullDescription: {
       en: "A complete e-commerce solution developed in PHP with comprehensive product catalog management, order processing system, and administrative tools for inventory management. Features include shopping cart functionality, payment gateway integration, and customer account management.",
       fr: "Une solution e-commerce complète développée en PHP avec gestion complète du catalogue produits, système de traitement des commandes et outils administratifs pour la gestion des stocks. Les fonctionnalités incluent le panier d'achat, l'intégration de passerelle de paiement et la gestion des comptes clients.",
       ar: "حل تجارة إلكترونية كامل تم تطويره بـ PHP مع إدارة شاملة لكتالوج المنتجات، نظام معالجة الطلبات، وأدوات إدارية لإدارة المخزون. تشمل الميزات وظائف عربة التسوق وتكامل بوابة الدفع وإدارة حسابات العملاء.",
     },
     technologies: ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Bootstrap"],
-    image: "/placeholder.svg?height=400&width=600&text=E-commerce+PHP+Site",
+    image: "/etrade.png?height=400&width=600&text=E-commerce+PHP+Site",
     category: "web",
   },
   {
@@ -82,7 +83,7 @@ export const projectsData: Project[] = [
       ar: "تطبيق قوي لإدارة المخزون تم تطويره باستخدام إطار عمل .NET لتبسيط العمليات الإدارية، يتضمن تتبع المخزون، التنبيهات الآلية، وأدوات التقارير الشاملة. يشمل التطبيق مسح الباركود وإدارة الموردين ومراقبة مستويات المخزون في الوقت الفعلي.",
     },
     technologies: [".NET", "C#", "SQL Server", "WPF", "Entity Framework"],
-    image: "/placeholder.svg?height=400&width=600&text=Stock+Management+App",
+    image: "/stock.png?height=400&width=600&text=Stock+Management+App",
     category: "desktop",
   },
   {
@@ -109,22 +110,22 @@ export const projectsData: Project[] = [
   {
     id: "restaurant-dashboard",
     title: {
-      en: "Restaurant Evaluation Dashboard",
-      fr: "Tableau de Bord d'Évaluation de Restaurant",
-      ar: "لوحة تقييم المطاعم",
+      en: "StudentHelp",
+      fr: "Aide aux étudiants",
+      ar: "مساعدة الطلاب",
     },
     description: {
-      en: "Interactive data visualization dashboard built with Power BI",
-      fr: "Tableau de bord de visualisation de données interactif avec Power BI",
-      ar: "لوحة تحكم تفاعلية لتصور البيانات مطورة بـ Power BI",
+      en: "Plateforme E-learning with django",
+      fr: "Plateform E-learning avec django",
+      ar: "منصة التعلم الإلكتروني مع Django",
     },
     fullDescription: {
       en: "An interactive dashboard built with Power BI for restaurant performance evaluation, featuring comprehensive data visualization, customer feedback analysis, and business intelligence insights. The dashboard provides real-time metrics, trend analysis, and actionable recommendations for restaurant management.",
       fr: "Un tableau de bord interactif développé avec Power BI pour l'évaluation des performances de restaurant, avec visualisation complète des données, analyse des commentaires clients et insights de business intelligence. Le tableau de bord fournit des métriques en temps réel, une analyse des tendances et des recommandations exploitables pour la gestion de restaurant.",
       ar: "لوحة تحكم تفاعلية تم تطويرها باستخدام Power BI لتقييم أداء المطاعم، تتضمن تصور شامل للبيانات، تحليل تعليقات العملاء، ورؤى ذكاء الأعمال. توفر لوحة التحكم مقاييس في الوقت الفعلي وتحليل الاتجاهات وتوصيات قابلة للتنفيذ لإدارة المطاعم.",
     },
-    technologies: ["Power BI", "Data Analysis", "SQL", "Dashboard Design", "DAX"],
+    technologies: ["Django", "Python"],
     image: "/placeholder.svg?height=400&width=600&text=Restaurant+Dashboard",
-    category: "analytics",
+    category: "web",
   },
 ]

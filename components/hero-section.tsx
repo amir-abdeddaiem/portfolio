@@ -131,7 +131,7 @@ export function HeroSection() {
               <div className="relative group">
                 <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl animate-slide-in-right delay-300 group-hover:scale-105 transition-all duration-500 relative">
                   <Image
-                    src="/placeholder.jpeg?height=320&width=320"
+                    src="/placeholder.png?height=320&width=320"
                     alt="Amir Abdeddaiem - Full-Stack Developer"
                     width={320}
                     height={320}

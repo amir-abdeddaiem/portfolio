@@ -1,8 +1,8 @@
 export interface Project {
   id: string
-  title: { en: string; fr: string }
-  description: { en: string; fr: string }
-  fullDescription: { en: string; fr: string }
+  title: { en: string; fr: string; ar:string}
+  description: { en: string; fr: string; ar:string }
+  fullDescription: { en: string; fr: string;ar:string }
   technologies: string[]
   image: string
   category: string
