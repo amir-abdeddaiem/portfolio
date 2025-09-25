@@ -125,7 +125,7 @@ export const projectsData: Project[] = [
       ar: "لوحة تحكم تفاعلية تم تطويرها باستخدام Power BI لتقييم أداء المطاعم، تتضمن تصور شامل للبيانات، تحليل تعليقات العملاء، ورؤى ذكاء الأعمال. توفر لوحة التحكم مقاييس في الوقت الفعلي وتحليل الاتجاهات وتوصيات قابلة للتنفيذ لإدارة المطاعم.",
     },
     technologies: ["Django", "Python"],
-    image: "/placeholder.svg?height=400&width=600&text=Restaurant+Dashboard",
+    image: "/sth.jfif?height=400&width=600&text=Restaurant+Dashboard",
     category: "web",
   },
 ]
