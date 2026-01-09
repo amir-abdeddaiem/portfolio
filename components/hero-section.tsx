@@ -108,7 +108,7 @@ export function HeroSection() {
                   {t.hero.getInTouch}
                 </Button>
 
-                <a href="/CV_Amir-Abdeddaiem.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/Resume_Amir_Abdeddaiem.pdf" target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
                     className="hover:scale-110 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 group relative overflow-hidden"
